@@ -1,0 +1,10 @@
+<h1><%=@scientist.name %></h1>
+
+<p><h3>My Field of Study: <%= @scientist.field_of_study%></h3>
+
+<ul>
+  <% @scientist.missions.each do |mission| %>
+    <li><%= mission.planet.name %> | <%= mission.name %></li>
+  <% end %>
+
+<%= button_to "Wipe out all research", scientist_path(@scientist), method: :delete %></ul>

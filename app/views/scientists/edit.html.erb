@@ -1,0 +1,13 @@
+<h1>Edit Scientist 🔭 </h1>
+
+<%= form_for @scientist do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+  <%= f.label :field_of_study %>
+  <%= f.text_field :field_of_study %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
